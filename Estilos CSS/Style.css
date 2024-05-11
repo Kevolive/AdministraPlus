@@ -1,0 +1,11 @@
+.indexBody {
+    padding: 10px;
+    background-image: url(https://www.eude.co/wp-content/uploads/sites/5/2021/01/Dise%C3%B1o-sin-t%C3%ADtulo-2021-01-27T132931.961.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
