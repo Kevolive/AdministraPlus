@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFE9F4; /* Magnolia (blanco) */
+    font-family: 'Arial', sans-serif; /* Usando Arial como fallback si FF DIN no está disponible */
+}
+
+.modal-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Altura completa de la ventana del navegador */
+    background-color: #171D1C; /* Negro espeluznante para el fondo del contenedor */
+}
+
+.modal {
+    background-color: #FFFFFF; /* Blanco */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%; /* Reducido de 80% a 70% */
+    max-width: 350px; /* Reducido de 400px a 350px */
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-header {
+    text-align: center;
+    color: #171D1C; /* Negro espeluznante para los textos del encabezado */
+}
+
+.modal-header h3 {
+    margin-bottom: 8px;
+}
+
+.modal-header p {
+    font-size: 14px;
+}
+
+.modal-actions {
+    display: flex; /* Flexbox para la disposición horizontal */
+    justify-content: space-around; /* Espacio alrededor de los botones */
+    margin-top: 20px;
+}
+
+.btn {
+    flex-grow: 1; /* Los botones crecen para llenar el espacio */
+    margin: 0 10px; /* Espaciado entre botones */
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #5863F8; /* Azul Neón para el fondo */
+    color: #FFFFFF; /* Texto blanco */
+    border: none;
+    text-align: center;
+    text-decoration: none; /* No subrayado */
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Estilos adicionales para mejorar la respuesta en dispositivos más pequeños */
+@media (max-width: 600px) {
+    .modal {
+        width: 95%; /* Ajuste del ancho en pantallas pequeñas */
+        padding: 10px; /* Reduce el espacio interior */
+    }
+    .modal-actions {
+        flex-wrap: wrap; /* Permitir que los botones se envuelvan en pantallas pequeñas */
+        margin-top: 10px; /* Espaciado superior más pequeño */
+    }
+    .btn {
+        flex-grow: 0; /* Los botones no crecen tanto en pantallas pequeñas */
+        margin: 5px; /* Espacio entre botones más pequeño */
+        font-size: 12px; /* Tamaño de fuente más pequeño */
+    }
+}

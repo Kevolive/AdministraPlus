@@ -1,0 +1,101 @@
+/* Estilos generales y tipografía */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #1f2937; /* gray-800 */
+    color: white;
+    padding: 16px; /* p-4 */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.25rem; /* text-xl */
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px; /* space-x-4 */
+}
+
+header nav ul li a {
+    color: #60a5fa; /* text-blue-300 */
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #3b82f6; /* hover:text-blue-500 */
+}
+
+/* Sección principal */
+section {
+    margin-top: 24px; /* mt-6 */
+    padding: 24px; /* p-6 */
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem; /* text-3xl */
+    font-weight: bold;
+    margin-bottom: 8px; /* mb-2 */
+}
+
+section p {
+    color: #4b5563; /* text-gray-700 */
+    margin-bottom: 16px; /* mb-4 */
+}
+
+section a {
+    background-color: #3b82f6; /* bg-blue-500 */
+    color: white;
+    padding: 8px 16px; /* py-2 px-4 */
+    border-radius: 4px; /* rounded */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    background-color: #2563eb; /* hover:bg-blue-700 */
+}
+
+/* Footer */
+footer {
+    background-color: #111827; /* bg-gray-900 */
+    color: white;
+    text-align: center;
+    padding: 16px; /* p-4 */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 16px; /* p-4 */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.25rem;
+    }
+}
