@@ -78,6 +78,11 @@ body {
 .link:hover {
     text-decoration: underline;
 }
+textarea {
+    /* border: rgb(160, 157, 157) 1px solid; */
+    background-color: rgb(255, 255, 255);
+    
+}
 
 @media (max-width: 600px) {
     .login-container {
