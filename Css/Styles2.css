@@ -16,7 +16,8 @@ header {
 header h1 {
     font-size: 1.25rem; /* text-xl */
     margin: 0;
-}
+    font-family: "roboto";  /* la fuente fue tomada de google fonts
+} */ }
 
 header nav ul {
     list-style-type: none;
