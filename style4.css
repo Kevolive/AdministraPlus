@@ -1,0 +1,9 @@
+h1, p{
+    text-align: center;
+    animation: both;
+}
+
+main hr {
+    height: 2px;
+    background-color: black;
+}
