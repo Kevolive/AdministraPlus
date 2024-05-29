@@ -16,7 +16,20 @@ main hr {
     display: flex;
     justify-content: center;
 }
+.contenedor2{
+    font-family: 'Roboto';
+    background: #16BAC5;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
 input{
+    padding: 2px;
     border: 2px solid black;
     font-weight: bold;
 
@@ -27,4 +40,7 @@ body{
 }
 section{
     font-weight: bold;
+}
+footer{
+    text-align: center;
 }
