@@ -8,7 +8,9 @@
     <link rel="shortcut icon" href="/AdministraPlus/imagenes/icono.ico">
 
     <link rel="stylesheet" href="style4.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -22,18 +24,14 @@
                         <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round"
                             stroke-linejoin="round" stroke-width="2"
-                            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                            class="w-10 h-10 text-white p-2 bg-blue-600 rounded-full" viewBox="0 0 24 24">
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                         </svg>
-                        <span
-                            class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">AdministraPlus.com</span>
+                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">ADPlus.com</span>
                     </a>
-
-                    <nav>
-
-
-                    </nav>
-                    <hr>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -47,27 +45,46 @@
         <hr>
         <br>
         <form action="" class="contenedor">
-        <div class="ingresos"> <label class="text-gray-900">
-                Ingresos:
-            </label>
-            <div class="relative mt-2 max-w-xs text-gray-900">
-                <div class="absolute inset-y-0 left-3 flex items-center">
-                    <select class="text-sm bg-transparent outline-none rounded-lg h-full">
-                        <option>PESO</option>
-                        <option>EUR</option>
-                        <option>USD</option>
-                    </select>
-                </div>
-                <input type="number" id="Ropa" placeholder="$0.00"
-                    class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-900 shadow-sm rounded-lg" />
-            </div>
-        </div>
-        </div> <br>
-        <div class="gastos">
-            <div> <label class="text-gray-900">
-                    Gastos:
+            <div class="ingresos"> <label class="text-gray-900">
+                    Ingresos:
                 </label>
-                <div class="relative mt-2 max-w-xs text-gray-500">
+                <div class="relative mt-2 max-w-xs text-gray-900">
+                    <div class="absolute inset-y-0 left-3 flex items-center">
+                        <select class="text-sm bg-transparent outline-none rounded-lg h-full">
+                            <option>PESO</option>
+                            <option>EUR</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                    <input type="number" id="Ropa" placeholder="$0.00"
+                        class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-900 shadow-sm rounded-lg" />
+                </div>
+            </div>
+            </div> <br>
+            <div class="gastos">
+                <div> <label class="text-gray-900">
+                        Gastos:
+                    </label>
+                    <div class="relative mt-2 max-w-xs text-gray-500">
+                        <div class="absolute inset-y-0 left-3 flex items-center">
+                            <select class="text-sm bg-transparent outline-none rounded-lg h-full">
+                                <option>PESO</option>
+                                <option>EUR</option>
+                                <option>USD</option>
+                            </select>
+                        </div>
+                        <input type="number" id="Ropa" placeholder="$0.00"
+                            class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div>
+                <label class="text-gray-900">
+                    Saldo:
+                </label>
+                <div class="relative mt-2 max-w-xs text-gray-900">
                     <div class="absolute inset-y-0 left-3 flex items-center">
                         <select class="text-sm bg-transparent outline-none rounded-lg h-full">
                             <option>PESO</option>
@@ -79,97 +96,78 @@
                         class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
                 </div>
             </div>
-        </div>
-    
-        <br>
-        <div>
-            <label class="text-gray-900">
-                Saldo:
-            </label>
-            <div class="relative mt-2 max-w-xs text-gray-900">
-                <div class="absolute inset-y-0 left-3 flex items-center">
-                    <select class="text-sm bg-transparent outline-none rounded-lg h-full">
-                        <option>PESO</option>
-                        <option>EUR</option>
-                        <option>USD</option>
-                    </select>
-                </div>
-                <input type="number" id="Ropa" placeholder="$0.00"
-                    class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
-            </div>
-        </div>
-    </form>
+        </form>
         <br>
         <hr class="linea">
         <form action="" class="contenedor2">
             <div>
-            <label class="text-gray-900">
-                Ropa:
-            </label>
-            <div class="relative mt-2 max-w-xs text-gray-900">
-                <div class="absolute inset-y-0 left-3 flex items-center">
-                    <select class="text-sm bg-transparent outline-none rounded-lg h-full">
-                        <option>PESO</option>
-                        <option>EUR</option>
-                        <option>USD</option>
-                    </select>
+                <label class="text-gray-900">
+                    Ropa:
+                </label>
+                <div class="relative mt-2 max-w-xs text-gray-900">
+                    <div class="absolute inset-y-0 left-3 flex items-center">
+                        <select class="text-sm bg-transparent outline-none rounded-lg h-full">
+                            <option>PESO</option>
+                            <option>EUR</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                    <input type="number" id="Ropa" placeholder="$0.00"
+                        class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
                 </div>
-                <input type="number" id="Ropa" placeholder="$0.00"
-                    class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
             </div>
-        </div>
-        <br>
-        <div>
-            <label class="text-gray-900">
-                Transporte:
-            </label>
-            <div class="relative mt-2 max-w-xs text-gray-900">
-                <div class="absolute inset-y-0 left-3 flex items-center">
-                    <select class="text-sm bg-transparent outline-none rounded-lg h-full">
-                        <option>PESO</option>
-                        <option>EUR</option>
-                        <option>USD</option>
-                    </select>
+            <br>
+            <div>
+                <label class="text-gray-900">
+                    Transporte:
+                </label>
+                <div class="relative mt-2 max-w-xs text-gray-900">
+                    <div class="absolute inset-y-0 left-3 flex items-center">
+                        <select class="text-sm bg-transparent outline-none rounded-lg h-full">
+                            <option>PESO</option>
+                            <option>EUR</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                    <input type="number" id="Transporte" placeholder="$0.00"
+                        class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
                 </div>
-                <input type="number" id="Transporte" placeholder="$0.00"
-                    class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
             </div>
-        </div>
-        <br>
-        <div>
-            <label class="text-gray-900">
-                Comida:
-            </label>
-            <div class="relative mt-2 max-w-xs text-gray-900">
-                <div class="absolute inset-y-0 left-3 flex items-center">
-                    <select class="text-sm bg-transparent outline-none rounded-lg h-full">
-                        <option>PESO</option>
-                        <option>EUR</option>
-                        <option>USD</option>
-                    </select>
+            <br>
+            <div>
+                <label class="text-gray-900">
+                    Comida:
+                </label>
+                <div class="relative mt-2 max-w-xs text-gray-900">
+                    <div class="absolute inset-y-0 left-3 flex items-center">
+                        <select class="text-sm bg-transparent outline-none rounded-lg h-full">
+                            <option>PESO</option>
+                            <option>EUR</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                    <input type="number" id="Comida" placeholder="$0.00"
+                        class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
                 </div>
-                <input type="number" id="Comida" placeholder="$0.00"
-                    class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
             </div>
-        </div>
-        <br>
-        <div>
-            <label class="text-gray-600">
-                Alquiler:
-            </label>
-            <div class="relative mt-2 max-w-xs text-gray-900">
-                <div class="absolute inset-y-0 left-3 flex items-center">
-                    <select class="text-sm bg-transparent outline-none rounded-lg h-full">
-                        <option>PESO</option>
-                        <option>EUR</option>
-                        <option>USD</option>
-                    </select>
+            <br>
+            <div>
+                <label class="text-gray-600">
+                    Alquiler:
+                </label>
+                <div class="relative mt-2 max-w-xs text-gray-900">
+                    <div class="absolute inset-y-0 left-3 flex items-center">
+                        <select class="text-sm bg-transparent outline-none rounded-lg h-full">
+                            <option>PESO</option>
+                            <option>EUR</option>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                    <input type="number" id="Alquiler" placeholder="$0.00"
+                        class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
                 </div>
-                <input type="number" id="Alquiler" placeholder="$0.00"
-                    class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
             </div>
-        </div>
-    </form>
+        </form>
         <br>
 
 
