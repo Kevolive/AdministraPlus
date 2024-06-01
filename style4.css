@@ -1,7 +1,8 @@
-h1, p{
+h1,
+p {
     text-align: center;
     animation: both;
-    background: #5FBFF9
+    background: #5FBFF9;
 }
 
 main hr {
@@ -9,38 +10,45 @@ main hr {
     border: 2px solid black;
     font-weight: bold;
 }
+
 .contenedor {
     font-family: 'Roboto';
-    background: #16BAC5;
+    background: #5FBFF9;
     border: 2px solid black;
     display: flex;
     justify-content: center;
 }
-.contenedor2{
+
+.contenedor2 {
     font-family: 'Roboto';
-    background: #16BAC5;
+    background: #5FBFF9;
     border: 2px solid black;
     padding: 20px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
-input{
+
+input {
     padding: 2px;
     border: 2px solid black;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-}
-body{
-    font-weight: bold;
-    
-}
-section{
+body {
     font-weight: bold;
 }
-footer{
+
+section {
+    font-weight: bold;
+}
+
+footer {
     text-align: center;
 }
