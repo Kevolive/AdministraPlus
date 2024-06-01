@@ -38,10 +38,10 @@
                 return; // Detener la ejecución si algún campo está vacío
             }
 
-            // Simular autenticación (esto debería ser reemplazado con tu lógica real de autenticación)
-            if (username === "usuario" && password === "contraseña") {
-                // Si la autenticación es exitosa, redirigir a otra página o realizar otra acción
-                alert('Inicio de sesión exitoso');
+            // Autenticación con credenciales específicas
+            if (username === "ADplus" && password === "ADplus4") {
+                // Si la autenticación es exitosa, redirigir a otra página
+                window.location.href = "principal.html"; 
             } else {
                 // Si la autenticación falla, mostrar un mensaje de error
                 var errorMessage = document.createElement('p');
