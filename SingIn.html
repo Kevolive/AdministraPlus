@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-900 text-white">
     <div class="login-container">
-        <form class="login-form">
+        <form id="loginForm" class="login-form">
             <h1 class="login-title">Iniciar Sesión</h1>
             <label for="username" class="label">Usuario</label>
             <input type="text" id="username" placeholder="Ingresa tu usuario" class="input">
@@ -24,5 +24,32 @@
             </div>
         </form>
     </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+            
+            // Obtener los valores de usuario y contraseña
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Validar que los campos no estén vacíos
+            if (!username.trim() || !password.trim()) {
+                alert('Por favor, ingresa tu usuario y contraseña.');
+                return; // Detener la ejecución si algún campo está vacío
+            }
+
+            // Autenticación con credenciales específicas
+            if (username === "ADplus" && password === "ADplus4") {
+                // Si la autenticación es exitosa, redirigir a otra página
+                window.location.href = "principal.html"; 
+            } else {
+                // Si la autenticación falla, mostrar un mensaje de error
+                var errorMessage = document.createElement('p');
+                errorMessage.textContent = 'Usuario o contraseña incorrectos';
+                errorMessage.style.color = 'red';
+                document.getElementById('loginForm').appendChild(errorMessage);
+            }
+        });
+    </script>
 </body>
 </html>
