@@ -4,54 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - AdministraPlus.com</title>
-    <link rel="stylesheet" href="Css/Styles3.css"><!-- Se le aplica el Style3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="Css/Styles3.css">
 </head>
-<body class="bg-gray-900 text-white">
-    <div class="login-container">
-        <form id="loginForm" class="login-form">
-            <h1 class="login-title">Iniciar Sesión</h1>
-            <label for="username" class="label">Usuario</label>
-            <input type="text" id="username" placeholder="Ingresa tu usuario" class="input">
-
-            <label for="password" class="label">Contraseña</label>
-            <input type="password" id="password" placeholder="Ingresa tu contraseña" class="input">
-
-            <button type="submit" class="btn">Iniciar Sesión</button>
-
-            <div class="extra-links">
-                <a href="Singup.html" class="link">¿No tienes cuenta? Regístrate</a>
-                <a href="forgot-password.html" class="link">¿Olvidaste tu contraseña?</a>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+    <div class="login-container max-w-md w-full p-8 bg-gray-800 rounded-lg shadow-lg">
+        <form id="loginForm" class="login-form space-y-6">
+            <h1 class="login-title text-3xl font-bold text-center">Iniciar Sesión</h1>
+            <div>
+                <label for="username" class="block text-sm font-medium">Usuario</label>
+                <input type="text" id="username" placeholder="Ingresa tu usuario" class="input mt-1 block w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring focus:border-blue-300" required>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium">Contraseña</label>
+                <input type="password" id="password" placeholder="Ingresa tu contraseña" class="input mt-1 block w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring focus:border-blue-300" required>
+            </div>
+            <div>
+                <button type="submit" class="btn w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-300">Iniciar Sesión</button>
+            </div>
+            <div class="extra-links text-center">
+                <a href="Signup.html" class="link text-blue-500 hover:underline">¿No tienes cuenta? Regístrate</a>
+                <br>
+                <a href="forgot-password.html" class="link text-blue-500 hover:underline">¿Olvidaste tu contraseña?</a>
             </div>
         </form>
     </div>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evitar que el formulario se envíe automáticamente
-
-            // Obtener los valores de usuario y contraseña
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-            // Validar que los campos no estén vacíos
-            if (!username.trim() || !password.trim()) {
-                alert('Por favor, ingresa tu usuario y contraseña.');
-                return; // Detener la ejecución si algún campo está vacío
-            }
-
-            // Autenticación con credenciales específicas
-            if (username === "ADplus" && password === "ADplus4") {
-                // Si la autenticación es exitosa, cerrar la ventana y redirigir a la página principal
-                alert('Inicio de sesión exitoso');
-                window.opener = null; // Previene ataques de redirección
-                window.close();
-            } else {
-                // Si la autenticación falla, mostrar un mensaje de error
-                var errorMessage = document.createElement('p');
-                errorMessage.textContent = 'Usuario o contraseña incorrectos';
-                errorMessage.style.color = 'red';
-                document.getElementById('loginForm').appendChild(errorMessage);
-            }
-        });
-    </script>
+    <script src="signin.js" defer></script>
 </body>
 </html>

@@ -1,111 +1,67 @@
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #171D1C;
-        /* Negro espeluznante */
-        color: #EFE9F4;
-        /* Magnolia */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        /* Asegura que el cuerpo del documento ocupe toda la pantalla */
-    }
-    
-    .login-container {
-        width: 100%;
-        /* Ocupa el ancho completo en dispositivos pequeños */
-        max-width: 360px;
-        /* Máximo ancho del contenedor para que no se vea muy grande en pantallas amplias */
-        padding: 20px;
-        background-color: #5863F8;
-        /* Azul Neón */
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .login-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* Alinea verticalmente los elementos del formulario */
-    }
-    
-    .login-title {
-        color: #EFE9F4;
-        /* Magnolia */
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .label {
-        width: 100%;
-        /* Asegura que la etiqueta ocupe el ancho completo */
-        color: #EFE9F4;
-        /* Magnolia */
-        margin-bottom: 5px;
-    }
-    
-    .input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 4px;
-        background-color: #2D3748;
-        /* Gris oscuro para inputs */
-        color: #EFE9F4;
-        /* Texto claro */
-    }
-    
-    .btn {
-        width: 100%;
-        padding: 10px;
-        background-color: #5FBFF9;
-        /* Azul Maya */
-        color: #EFE9F4;
-        /* Texto claro */
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        text-transform: uppercase;
-    }
-    
-    .btn:hover {
-        background-color: #5058E5;
-        /* Azul Neón más oscuro */
-    }
-    
-    .extra-links {
-        text-align: center;
-        width: 100%;
-        margin-top: 20px;
-    }
-    
-    .link {
-        color: #EFE9F4;
-        /* Magnolia */
-        text-decoration: none;
-        display: block;
-        margin-top: 10px;
-    }
-    
-    .link:hover {
-        text-decoration: underline;
-    }
-    
-    textarea {
-        /* border: rgb(160, 157, 157) 1px solid; */
-        background-color: rgb(255, 255, 255);
-    }
-    
-    @media (max-width: 600px) {
-        .login-container {
-            padding: 15px;
-        }
-        .input,
-        .btn {
-            padding: 8px;
-        }
-    }
+/* Styles3.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #2d2d2d;
+    border-radius: 0.5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+    border-radius: 0.25rem;
+    background-color: #3d3d3d;
+    color: white;
+}
+
+.input:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.btn {
+    padding: 0.75rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1665c1;
+}
+
+.extra-links {
+    margin-top: 1rem;
+}
+
+.link {
+    color: #1a73e8;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

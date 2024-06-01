@@ -10,20 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/AdministraPlus/imagenes/icono.ico">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        function abrirInicioSesion() {
-            var url = "SingIn.html"; // La URL de la página de inicio de sesión
-            var opciones = "width=600,height=400,top=100,left=100,resizable=yes,scrollbars=yes";
-            var nuevaVentana = window.open(url, "loginWindow", opciones);
-
-            var pollTimer = window.setInterval(function() {
-                if (nuevaVentana.closed !== false) { // Si la ventana está cerrada
-                    window.clearInterval(pollTimer);
-                    window.location.href = "principal.html"; // Redirigir a la página principal
-                }
-            }, 100);
-        }
-    </script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,8 +22,8 @@
             <nav>
                 <ul>
                     <li><a href="#" onclick="abrirInicioSesion(); return false;">Inicia sesión</a></li>
-                    <li><a href="contact.html">Contactanos</a></li>
-                    <li><a href="Quienes-somos.html">Quienes somos</a></li>
+                    <li><a href="contact.html">Contáctanos</a></li>
+                    <li><a href="Quienes-somos.html">Quiénes somos</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,10 +33,11 @@
         <p>
             AdministraPlus te ofrece herramientas potentes para la gestión óptima de tus finanzas personales y empresariales. Simplifica tus procesos financieros, maximiza tus ahorros y mejora la rentabilidad de tu empresa con nuestra plataforma.
         </p>
-        <a href="Singup.html">¡Empieza ahora!</a>
+        <a href="Signup.html">¡Empieza ahora!</a>
     </section>
     <footer>
         © 2024 AdministraPlus.com. Todos los derechos reservados.
     </footer>
 </body>
 </html>
+
