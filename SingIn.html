@@ -27,7 +27,7 @@
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Evitar que el formulario se envíe automáticamente
-            
+
             // Obtener los valores de usuario y contraseña
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
@@ -40,8 +40,10 @@
 
             // Autenticación con credenciales específicas
             if (username === "ADplus" && password === "ADplus4") {
-                // Si la autenticación es exitosa, redirigir a otra página
-                window.location.href = "principal.html"; 
+                // Si la autenticación es exitosa, cerrar la ventana y redirigir a la página principal
+                alert('Inicio de sesión exitoso');
+                window.opener = null; // Previene ataques de redirección
+                window.close();
             } else {
                 // Si la autenticación falla, mostrar un mensaje de error
                 var errorMessage = document.createElement('p');
