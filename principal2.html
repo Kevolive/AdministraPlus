@@ -7,13 +7,13 @@
     <title>Página principal - ADPlus</title>
     <link rel="shortcut icon" href="/AdministraPlus/imagenes/icono.ico">
 
-    <link rel="stylesheet" href="Css/style4.css">
+    <link rel="stylesheet" href="Css/Style5.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="operaciones.js" defer>
+    <script src="operaciones2.js"></script>
         
-    </script>
+    
     
 </head>
 
@@ -28,7 +28,7 @@
                         </svg>
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">ADPlus.com</span>
                     </a>
-                    <div class="bg-gray-900"><h2 >PERSONA NATURAL</h2></div>
+                    <div class="bg-gray-900"><h2 >PERSONA JURÍDICA</h2></div>
                     <nav>
                         <ul>
                             <li><a href="contact.html">Contáctanos</a></li>
@@ -44,9 +44,9 @@
 
     <main>
         <div>
-            <h1><strong>Gestiona tu dinero de manera eficiente</strong></h1>
+            <h1><strong>Gestione el dinero de la empresa de manera eficiente</strong></h1>
             <p>
-                <strong> Hola querido usuario de ADPlus, quien te ayuda con todas tus finanzas. Agrega por favor cada uno de los ítems correspondientes.</strong>
+                <strong> Como empresa, ADPlus te ayuda con todas tus finanzas. Agrega por favor cada uno de los ítems correspondientes.</strong>
             </p>
         </div>
         <br>
@@ -58,7 +58,7 @@
         
                 <input type="month" name="month" id="month" class="mes"></div>
         </div>
-        <div class="item"><p> A continuación anota tus ingresos:
+        <div class="item"><p> A continuación anota el dinero que entró a la empresa este mes:
         </p></div>
         <br>
         <hr>
@@ -76,7 +76,7 @@
         </div>
         </form>
         <br>
-        <div class="item"><p> En esta parte se tiene en cuenta los valores que se extraen de tus ingresos:
+        <div class="item"><p> En esta parte se tiene en cuenta los valores que se extraen de los ingresos de la empresa:
         </p></div>
         <br>
         <form action="" class="contenedor2">
@@ -115,7 +115,7 @@
 
             <div>
                 <label class="text-gray-900">
-                    Educación:
+                    Compras:
                 </label>
                 <div class="relative mt-2 max-w-xs text-gray-900">
                     <input type="number" id="Educacion" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
@@ -134,7 +134,7 @@
             <br>
             <div>
                 <label class="text-gray-900">
-                    Comida:
+                    Alimentación:
                 </label>
                 <div class="relative mt-2 max-w-xs text-gray-900">
                     <input type="number" id="Comida" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
@@ -148,26 +148,49 @@
                 <div class="relative mt-2 max-w-xs text-gray-900">
                     <input type="number" id="Alquiler" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
                 </div>
+                
             </div>
-            <br>
-            <div>
-                <label class="text-gray-900">
-                    Otros:
-                </label>
-                <div class="relative mt-2 max-w-xs text-gray-900">
-                    <input type="number" id="Otros" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
-                </div>
-            </div>
-            <br>
-                  
+       <br>                     
         </form>
         <br>
-
-        <form action="" class="boton">
-            <div class="item"><label for="month"></label>
-                <input type="button" value="Agregar" onclick="agregar()">
-               </div>
-        </form>
+        <div>
+            <form action="" class="contenedor4">
+                <div>
+                    <label class="text-gray-900">
+                        Nómina:
+                    </label>
+                    <div class="relative mt-2 max-w-xs text-gray-900">
+                        <input type="number" id="Nomina" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
+                    </div>
+                    <br>
+                <div>
+                    <label class="text-gray-900">
+                        Seguridad:
+                    </label>
+                    <div class="relative mt-2 max-w-xs text-gray-900">
+                        <input type="number" id="Seguridad" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
+                    </div>
+                    <br>
+                <div>
+                    <label class="text-gray-900">
+                        Otros:
+                    </label>
+                    <div class="relative mt-2 max-w-xs text-gray-900">
+                        <input type="number" id="Otros" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <div>
+            <form action="" class="boton">
+                <div class="item"><label for="month"></label>
+                    <input type="button" value="Agregar" onclick="agregar()">
+                   </div>
+            </form>
+        </div>
+        
+        
         
     </main>
     

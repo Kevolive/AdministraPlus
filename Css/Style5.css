@@ -62,12 +62,27 @@ main hr {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     width: 80%;
     margin: 0 auto;
     text-align: center;
     
+    
+}
+.contenedor4{
+        font-family: 'Roboto';
+        background: #5FBFF9;
+        border: 2px solid black;
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
 }
 
 input {
@@ -119,6 +134,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-around; /* Distribución de espacio uniforme */
+    flex-grow: 2px;
     align-items: center;
     border: 10px rgb(2, 2, 2);
   }
