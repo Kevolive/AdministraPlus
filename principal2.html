@@ -86,7 +86,7 @@
                         Gastos:
                     </label>
                     <div class="relative mt-2 max-w-xs text-gray-900">
-                        <input type="number" id="Gastos" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
+                        <input type="number" id="Gastos" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" readonly/>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                     <div class="absolute inset-y-0 left-3 flex items-center">
 
                     </div>
-                    <input type="number" id="saldo" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
+                    <input type="number" id="saldo" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" readonly/>
                 </div>
             </div>
         </form>
@@ -118,7 +118,7 @@
                     Compras:
                 </label>
                 <div class="relative mt-2 max-w-xs text-gray-900">
-                    <input type="number" id="Educacion" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
+                    <input type="number" id="Compras" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
                 </div>
             </div>
             <br>
@@ -137,7 +137,7 @@
                     Alimentación:
                 </label>
                 <div class="relative mt-2 max-w-xs text-gray-900">
-                    <input type="number" id="Comida" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
+                    <input type="number" id="Alimentacion" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
                 </div>
             </div>
             <br>
@@ -178,23 +178,16 @@
                     <div class="relative mt-2 max-w-xs text-gray-900">
                         <input type="number" id="Otros" class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
                     </div>
+                    <br>
+                <div>
+                    
+                    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md" onclick="agregar()">Agregar</button>
                 </div>
-                
-            </form>
-        </div>
-        <div>
-            <form action="" class="boton">
-                <div class="item"><label for="month"></label>
-                    <input type="button" value="Agregar" onclick="agregar()">
-                   </div>
-            </form>
-        </div>
-        
-        
-        
+            </div>
+        </form>
     </main>
-    
-    <footer class="bg-black-500 divide-y dark:bg-black-800 dark:text-white-800">
+
+    <footer class="px-4 divide-y dark:bg-black-500 dark:text-white-800">
         <div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
             <div class="lg:w-1/3">
                 <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
@@ -215,16 +208,13 @@
                         Producto</h3>
                     <ul class="space-y-1">
                         <li>
-                            <a rel="noopener noreferrer" href="#" _msttexthash="115817" _msthash="1168">Features</a>
+                            <a rel="noopener noreferrer" href="#" _msttexthash="209586" _msthash="1169">Integrantes</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" _msttexthash="209586" _msthash="1169">Integrations</a>
+                            <a rel="noopener noreferrer" href="Precios.html" _msttexthash="95589" _msthash="1170">Precios</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" _msttexthash="95589" _msthash="1170">Precios</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" _msttexthash="22607" _msthash="1171">FAQ</a>
+                            <a rel="noopener noreferrer" href="#" _msttexthash="22607" _msthash="1171">Preguntas mas frecuentes</a>
                         </li>
                     </ul>
                 </div>
@@ -233,11 +223,10 @@
                         Compañia</h3>
                     <ul class="space-y-1">
                         <li>
-                            <a rel="noopener noreferrer" href="#" _msttexthash="96525" _msthash="1173">Privacy</a>
+                            <a rel="noopener noreferrer" href="#" _msttexthash="96525" _msthash="1173">Privacidad</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" _msttexthash="256529" _msthash="1174">Terms of
-                                Service</a>
+                            <a rel="noopener noreferrer" href="#" _msttexthash="256529" _msthash="1174">Terminos de servicios</a>
                         </li>
                     </ul>
                 </div>
@@ -245,15 +234,11 @@
                     <h3 class="uppercase dark:text-white-900" _msttexthash="159848" _msthash="1175">Desarolladores</h3>
                     <ul class="space-y-1">
                         <li>
-                            <a rel="noopener noreferrer" href="#" _msttexthash="115193" _msthash="1176">Public
-                                API</a>
-                        </li>
-                        <li>
                             <a rel="noopener noreferrer" href="#" _msttexthash="234962"
-                                _msthash="1177">Documentation</a>
+                                _msthash="1177">Documentacion</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" _msttexthash="76297" _msthash="1178">Guides</a>
+                            <a rel="noopener noreferrer" href="#" _msttexthash="76297" _msthash="1178">Guia</a>
                         </li>
                     </ul>
                 </div>
@@ -289,10 +274,8 @@
                 </div>
             </div>
         </div>
-        <div class="py-6 text-sm text-center dark:text-gray-900" _msttexthash="973869" _msthash="1180">© 2024
+        <div class="py-6 text-sm text-center dark:text-gray-600" _msttexthash="973869" _msthash="1180">© 2024
             ADplus.com. Todos los derechos reservados.</div>
     </footer>
-
 </body>
-
 </html>
