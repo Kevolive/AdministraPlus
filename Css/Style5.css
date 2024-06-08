@@ -1,9 +1,6 @@
 body {
     font-weight: bold;
-    background-image: url(https://th.bing.com/th/id/OIP.yM0uUOfYI5AuZ9pmVPjgzAHaE7?w=306&h=204&c=7&r=0&o=5&dpr=1.1&pid=1.7);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #052449;
 }   
 h1 {
     text-align: center;
@@ -20,14 +17,14 @@ p {
 
 main hr {
     height: 2px;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 253, 253);
     font-weight: bold;
 
 }
 .contenedor{
     font-family: 'Roboto';
     background: #5FBFF9;
-    border: 2px solid black;
+    border: 2px solid rgb(254, 254, 254);
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -42,7 +39,7 @@ main hr {
 .contenedor2 {
     font-family: 'Roboto';
     background: #5FBFF9;
-    border: 2px solid black;
+    border: 2px solid rgb(253, 251, 251);
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -57,7 +54,7 @@ main hr {
 .contenedor3 {
     font-family: 'Roboto';
     background: #5FBFF9;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 253, 253);
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -73,7 +70,7 @@ main hr {
 .contenedor4{
         font-family: 'Roboto';
         background: #5FBFF9;
-        border: 2px solid black;
+        border: 2px solid rgb(254, 252, 252);
         padding-left: 40px;
         padding-top: 20px;
         padding-bottom: 20px;
