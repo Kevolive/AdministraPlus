@@ -51,6 +51,7 @@
     <main>
         <div>
             <h1><strong>Gestiona tu dinero de manera eficiente</strong></h1>
+            <hr>
             <p>
                 <strong> Hola querido usuario de ADPlus, quien te ayuda con todas tus finanzas. Agrega por favor cada
                     uno de los ítems correspondientes.</strong>
@@ -58,11 +59,8 @@
         </div>
         <br>
         <hr>
-        <br>
-        <br>
         <div class="contenedor-flex">
             <div class="item"><label for="month">Mes de registro actual:</label>
-
                 <input type="month" name="month" id="month" class="mes">
             </div>
         </div>
@@ -70,9 +68,9 @@
             <p> A continuación anota tus ingresos:
             </p>
         </div>
-        <br>
+        
         <hr>
-        <br>
+        
         <form action="" class="contenedor"> <!-- Parte de ingresos -->
             <div class="ingresos"> <label class="text-gray-900">
                     Ingresos:
@@ -86,49 +84,17 @@
                 </div>
             </div>
         </form>
-        <br>
-        <div class="item">
-            <p> En esta parte se tiene en cuenta los valores que se extraen de tus ingresos:
-            </p>
-        </div>
-        <br>
-        <form action="" class="contenedor2">
-            </div> <br>
-            <div class="Gastos">
-                <div> <label class="text-gray-900">
-                        Gastos:
-                    </label>
-                    <div class="relative mt-2 max-w-xs text-gray-900">
-                        <input type="number" id="Gastos"
-                            class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" readonly />
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <div>
-                <label class="text-gray-900">
-                    Saldo:
-                </label>
-                <div class="relative mt-2 max-w-xs text-gray-900">
-                    <div class="absolute inset-y-0 left-3 flex items-center">
-
-                    </div>
-                    <input type="number" id="saldo"
-                        class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" readonly />
-                </div>
-            </div>
-        </form>
-        <br>
+        
+        
         <hr class="linea">
-        <br>
-        <br>
+        
+        
         <div class="item">
             <p> En esta parte puedes inscribir todos los gastos que realizaste durante el mes:
             </p>
         </div>
         <form action="" class="contenedor3">
-            <br>
+            
 
 
             <div>
@@ -154,10 +120,10 @@
             <br>
             <div>
                 <label class="text-gray-900">
-                    Comida:
+                    Alimentación:
                 </label>
                 <div class="relative mt-2 max-w-xs text-gray-900">
-                    <input type="number" id="Comida"
+                    <input type="number" id="Alimentacion"
                         class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" />
                 </div>
             </div>
@@ -182,16 +148,52 @@
                 </div>
             </div>
             <br>
-        
+
         </form>
+        <!-- Pasé gastos y saldo debajo -->
+        <div class="item">
+            <p> En esta parte se tiene en cuenta los valores que se extraen de tus ingresos:
+            </p>
+        </div>
+        <br>
         <div>
             <form action="" class="boton">
-                
-                    <label for="month"></label>
-                    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md" onclick="agregar()">Agregar</button>
-                                
+
+                <label for="month"></label>
+                <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md"
+                    onclick="agregar()">Agregar</button>
+
             </form>
-        </div> 
+        </div>
+        <br>
+        <form action="" class="contenedor2">
+             <br>
+            <div class="Gastos">
+                <div> <label class="text-gray-900">
+                        Gastos:
+                    </label>
+                    <div class="relative mt-2 max-w-xs text-gray-900">
+                        <input type="number" id="Gastos"
+                            class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" readonly />
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div>
+                <label class="text-gray-900">
+                    Saldo:
+                </label>
+                <div class="relative mt-2 max-w-xs text-gray-900">
+                    <div class="absolute inset-y-0 left-3 flex items-center">
+
+                    </div>
+                    <input type="number" id="saldo"
+                        class="w-full appearance-none  outline-none border  shadow-sm rounded-lg" readonly />
+                </div>
+            </div>
+        </form>
+        
 
     </main>
 

@@ -1,96 +1,108 @@
 body {
     font-weight: bold;
-    background-color: #052449;
+    background-color: #1E3A5F;
 }   
 h1 {
     text-align: center;
-    background: #5FBFF9;
+    background: #7FB3D5;
     font-weight: bold;
     font-size: 30px;
 }
+header div h2{
+    color: white;
+    margin: 2px white;
+    font-size: 20px;
+    border-color: white;
+  }
 p {
     text-align: center;
-    background: #5FBFF9;
+    background: #AED6F1;
     padding-right: 40px;
     padding-left: 40px;
 }
 
 main hr {
     height: 2px;
-    border: 2px solid rgb(9, 9, 9);
+    border: 2px solid rgb(255, 253, 253);
     font-weight: bold;
 
 }
 .contenedor{
     font-family: 'Roboto';
-    background: #5FBFF9;
-    border: 2px solid black;
-    padding-left: 40px;
+    background: #7FB3D5;
+    border: 2px solid #D4E6F1;
+    padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
-}
-
-.contenedor2 {
-    font-family: 'Roboto';
-    background: #5FBFF9;
-    border: 2px solid black;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    text-align: center;
+    gap: 10px;
 }
 
 .contenedor3 {
     font-family: 'Roboto';
-    background: #5FBFF9;
-    border: 2px solid black;
-    padding-left: 40px;
+    background: #7FB3D5;
+    border: 2px solid rgb(255, 253, 253);
+    padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 10px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
+    gap: 10px;
     
     
 }
 .contenedor4{
         font-family: 'Roboto';
-        background: #5FBFF9;
-        border: 2px solid black;
-        padding-left: 40px;
+        background: #7FB3D5;
+        border: 2px solid rgb(255, 253, 253);
+        padding-left: 30px;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
+        padding-right: 30px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-        width: 80%;
+        width: 50%;
         margin: 0 auto;
         text-align: center;
+        gap: 10px;
+}
+.contenedor2 {
+    font-family: 'Roboto';
+    background: #7FB3D5;
+    border: 2px solid rgb(253, 251, 251);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
 }
 
 input {
     padding: 2px;
-    border: 2px solid rgb(8, 8, 8);
+    border: 2px solid black;
     font-weight: bold;
     display: flex;
     justify-content: baseline;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 3;
+    
 }
 
 
@@ -121,9 +133,9 @@ img{
     justify-content: center;
 }
 .mes{
-    background: #5FBFF9;
+    background: #7FB3D5;
     border: 10px;
-    border: 2px solid rgb(251, 250, 250);
+    border: 2px solid black;
     
     
 }
@@ -133,30 +145,36 @@ img{
     justify-content: space-around; /* Distribución de espacio uniforme */
     flex-grow: 2px;
     align-items: center;
-    border: 10px rgb(253, 252, 252);
+    border: 10px rgb(2, 2, 2);
   }
   
   .item {
     background-color: #cccccc;
     padding: 10px;
     margin: 5px;
-    border: 3px rgb(252, 252, 252);
+    border: 3px black;
   }
   .boton {
-    background: #5FBFF9;
+    font-family: 'Roboto';
+    background: #7FB3D5;
+    border: 2px solid rgb(254, 254, 254);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin:  auto;
+    text-align: center;
+    /* background: #5FBFF9;
     display: flex;
     flex-direction: row;
     justify-content: center; /* Distribución de espacio uniforme */
-    align-items: center;
+    /* align-items: center;
     background-color:#5FBFF9;
     padding: 10px;
-    margin: 20px;
-    border: 1px solid rgb(253, 251, 251);
-    box-shadow: #2551b1;
-  }
-  div h2{
-    color: white;
-    margin: 2px white;
-    font-size: 20px;
-    border-color: white;
-  }
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: #2551b1; */
+  } 
