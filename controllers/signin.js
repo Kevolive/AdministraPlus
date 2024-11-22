@@ -16,6 +16,9 @@ document
     if (user.tipo === 'natural') {
       console.log('redireccion');
       location.href = '/vistaPersonaNatural.html'
+    } else if (user.tipo === 'juridica') {
+console.log('redirection');
+location.href = '/vistaPersonaJuridica.html'
     }
 
   });
