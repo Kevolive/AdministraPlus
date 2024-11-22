@@ -1,26 +1,12 @@
 export let Usuarios = [
     {
         usuario: 'kevin',
-        password: '1234'
+        password: '1234',
+        tipo: 'natural'
     },
     {
         usuario: 'admin',
-        password: 'admin'
-    },
-    {
-        usuario: 'admin',
-        password: 'admin'
-    },
-    {
-        usuario: 'admin',
-        password: 'admin'
-    },
-    {
-        usuario: 'admin',
-        password: 'admin'
-    },
-    {
-        usuario: 'admin',
-        password: 'admin'
-    },
+        password: 'admin',
+        tipo: 'juridica'
+    }
 ]
