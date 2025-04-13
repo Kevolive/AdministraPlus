@@ -1,37 +1,27 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdministraPlus.com</title>
-    <link rel="stylesheet" href="Css/Style.css"><!-- Se le aplica el Style1 -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Cards</title>
+  <link rel="stylesheet" href="Css/Style.css">
 </head>
-
 <body>
-    <div x-data="{ isOpen: true }" class="modal-container">
-        <div x-show="isOpen" x-transition:enter="transition duration-300 ease-out" x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95" x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100" x-transition:leave="transition duration-150 ease-in"
-            x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100" x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95" class="modal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div class="modal-content">
-                <div>
-                    <img class="modal-image" src="https://images.unsplash.com/photo-1579226905180-636b76d96082?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
-                    <div class="modal-header">
-                        <h3 id="modal-title">Bienvenido a AdministraPlus</h3>
-                        <p>Selecciona el tipo de persona.</p>
-                    </div>
-                </div>
-                <div class="modal-actions">
-                    <a href="natural.html" class="btn natural">
-                        <button @click="isOpen = false">Natural</button>
-                    </a>
-                    <a href="juridica.html" class="btn juridica">
-                        <button>Jurídica</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container">
+    <a href="./views/natural.html" class="card">
+      <img src="imagenes/persona.webp" alt="Persona Natural" class="card-img">
+       <div class="card-content">
+      <h2>Natural</h2>
+   </div>
+  </a>
+  </div>
+  <div class="container">
+  <a href="./views/juridica.html" class="card">
+      <img src="imagenes/juridico.webp" alt="Persona Juridica" class="card-img">
+       <div class="card-content">
+      <h2>Juridica</h2>
+   </div>
+  </a>
+  </div>
+</div>
 </body>
-
 </html>
